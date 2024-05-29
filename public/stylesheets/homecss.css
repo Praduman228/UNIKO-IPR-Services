@@ -35,10 +35,9 @@ body, html{
 }
 .hero nav .logo img{
    
-    width: 65px;
-    height: 50px;
-    border: 2px solid #97dcc4;
-   border-radius: 18px;
+    width: 120px;
+    height: 55px;
+    border-radius: 18px;
 }
 .hero nav ul {
     list-style-type: none;
@@ -584,13 +583,13 @@ main {
     justify-content: center;
 }
 #left{width: 60%;padding-top: 4%;}
-#right{width: 40%;}
+#right{width: 40%; }
 #left img{
     height: 400px;
     width: 500px;
     border-radius: 18px;
     
-    border: 2px solid #97dcc4;
+    border: 2px solid #fff;
 }
 #right h2{
     text-align: center;
@@ -598,6 +597,9 @@ main {
 }
 #right h4{
     padding-top: 5%;
+    text-wrap:wrap;
+    text-align:justify;
+    width: 90%;
     
 }
 
@@ -651,9 +653,14 @@ input {
   font-size: 30px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  margin: 0 0 35px;
+  margin: 0 0 10px;
 }
-
+.title{
+  font-weight: 300;
+  margin-bottom: 12%;
+  width: 80%;
+  text-align: justify;
+}
 .sec-pad {
   padding: 60px 0 0;
   margin: 50px 0;
