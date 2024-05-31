@@ -574,6 +574,7 @@ main {
 }
  
 
+
 #aboutus{
     width: 100%;
     padding-top: 4%;
@@ -1250,7 +1251,7 @@ section.t-bq-section {
   display: flex;
   flex-direction:column;
   align-items: center;
-  gap: 30px;
+  gap: 12px;
 }
 .team h3{
   font-size: 14px;
@@ -1260,6 +1261,7 @@ section.t-bq-section {
 .team h4{
   font-size: 14px;
   color: white;
+  text-align: center;
 
 }
 .team img{
