@@ -1,15 +1,12 @@
 var express = require('express');
 var router = express.Router();
-const usermodel=require("./database")
-const postmodel=require("./blogpost")
-const contactmodel=require("./contact")
+const usermodel=require("../models/userdata-model")
+const contactmodel=require("../models/contactus-model")
 const passport = require('passport')
 const passportlocal=require('passport-local')
 const nodemail=require("nodemailer")
 
 passport.use(new passportlocal(usermodel.authenticate()))
-/* GET home page. */
-
 
 router.get('/login', function(req, res) {
   res.render('login');

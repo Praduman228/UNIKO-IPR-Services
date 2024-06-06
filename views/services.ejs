@@ -32,60 +32,60 @@
 
 </head>
 
-<div class="hero">
-    <nav>
-      <div class="hh">
-        <div class="logo"><img src="../images/loho.png" alt="logo"></div>
-        <div class="hambargar">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+    <div class="hero">
+      <nav>
+        <div class="hh">
+          <div class="logo"><img src="../images/loho.png" alt="logo"></div>
+          <div class="hambargar">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
         </div>
-      </div>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/services" style="background-color: #97dcc4;">Services</a></li>
-        <li><a href="/">About Us</a></li>
-        <li><a href="/">Contact Us</a></li>
-        <i class="fa-solid fa-user profileIcon"></i>
-      </ul>
-      <div class="sub-menu-wrap" id="profileMenu">
-       <% if (req.isAuthenticated()){%>
-        <div class="sub-menu">
-          <div class="user-info">
-           <img  src="https://www.happierhuman.com/wp-content/uploads/2019/07/joking-man.jpg?ezimgfmt=rs:400x426/rscb1" alt="">
-            <h3><%=user.name %></h3>        
+        <ul>
+          <li><a href="#main" style="background-color: #97dcc4;">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <i class="fa-solid fa-user profileIcon"></i>
+        </ul>
+        <div class="sub-menu-wrap" id="profileMenu">
+         <% if (req.isAuthenticated()){%>
+          <div class="sub-menu">
+            <div class="user-info">
+             <img  src="https://www.happierhuman.com/wp-content/uploads/2019/07/joking-man.jpg?ezimgfmt=rs:400x426/rscb1" alt="">
+              <h3><%=user.name %></h3>        
+              </div>
+            <hr>
+            <div class="menu-link">
+              <a href="#"><i class="fa-solid fa-user"></i>
+                <h4> Edit Profile <span>&gt;</span></h4>
+              </a>
+              <a href="/logout"><i class="fa-solid fa-right-from-bracket"></i>
+                <h4> LogOut <span>&gt;</span></h4>
+              </a>
             </div>
-          <hr>
-          <div class="menu-link">
-            <a href="#"><i class="fa-solid fa-user"></i>
-              <h4> Edit Profile <span>&gt;</span></h4>
-            </a>
-            <a href="/logout"><i class="fa-solid fa-right-from-bracket"></i>
-              <h4> LogOut <span>&gt;</span></h4>
-            </a>
           </div>
+        <%}else {%>
+          <div class="sub-menu">
+            <div class="user-info">
+             <img  src="https://www.happierhuman.com/wp-content/uploads/2019/07/joking-man.jpg?ezimgfmt=rs:400x426/rscb1" alt="">
+              <h3>Wellcome Guest</h3>      
+            </div>
+            <hr>
+            <div class="menu-link">
+              <a href="/login"><i class="fa-solid fa-right-to-bracket"></i>
+                <h4> LogIn <span>&gt;</span></h4>
+              </a>
+              <a href="/login"><i class="fa-solid fa-right-from-bracket"></i>
+                <h4> SignUp <span>&gt;</span></h4>
+              </a>
+            </div>
+          </div>
+          <% }%>
         </div>
-      <%}else {%>
-        <div class="sub-menu">
-          <div class="user-info">
-           <img  src="https://www.happierhuman.com/wp-content/uploads/2019/07/joking-man.jpg?ezimgfmt=rs:400x426/rscb1" alt="">
-            <h3>Wellcome Guest</h3>      
-          </div>
-          <hr>
-          <div class="menu-link">
-            <a href="/login"><i class="fa-solid fa-right-to-bracket"></i>
-              <h4> LogIn <span>&gt;</span></h4>
-            </a>
-            <a href="/login"><i class="fa-solid fa-right-from-bracket"></i>
-              <h4> SignUp <span>&gt;</span></h4>
-            </a>
-          </div>
-        </div>
-        <% }%>
-      </div>
-    </nav>
-  </div>
+      </nav>
+    </div>
 
 <section class="bg-section" id="service">
 		<div class="section-h1">

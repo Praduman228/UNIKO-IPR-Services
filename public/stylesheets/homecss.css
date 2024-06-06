@@ -24,9 +24,9 @@ body, html{
 }
 .hero nav {
     color:white;
-    background-color: #DBD3CD;
+    background-color: white;
     width: 100%;
-    padding:1% 5%;
+    padding:1% 4%;
     display: flex;
     justify-content: space-between;
     position:relative;
@@ -71,7 +71,7 @@ body, html{
     transition: all .3s ease;
 }
 .hero nav ul i.fa-user:first-of-type:hover {
-    background-color: grey;
+    background-color: black !important;;
     color:white;
 }
 .hero nav .sub-menu-wrap{
@@ -207,7 +207,7 @@ body, html{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #DBD3CD;
+        background-color: white;
         position: relative;
         max-height:0;
         overflow: hidden;
@@ -638,7 +638,7 @@ body{
 #contact{
   width: 100%;
   padding: 2%;
-  background-color: #97dcc4
+  
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
@@ -1009,7 +1009,7 @@ section.t-bq-section {
 
 
 
-/* ========== 06. Jasper ========== */
+
 
 .t-bq-quote-jasper {
   position: relative;

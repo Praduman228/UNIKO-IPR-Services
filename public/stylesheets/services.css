@@ -1,8 +1,4 @@
-/* ****************
-     General
- ****************** */
  
-
     body {
       margin: 0;
       padding: 0;
@@ -20,7 +16,7 @@
     }
     .hero nav {
         color:white;
-        background-color: #DBD3CD;
+        background-color: white;
         width: 100%;
         padding:1% 5%;
         display: flex;
@@ -114,7 +110,7 @@
         background:#a1a1a1;
         padding:1px;
     }
-    .hero nav .sub-menu-wrap.show {
+    .hero nav .sub-menu-wrap .show {
         max-height: 800px;
         opacity:1;
     }
@@ -167,71 +163,75 @@
         display: none;
     }
     
-    @media only screen and (max-width : 700px){
-        .hambargar {
-            display: block;
-            margin-top: 10px;
-        }
-        .hambargar .line {
-            width: 30px;
-            height:3px;
-            background-color: white;
-            margin: 6px 0;
-            transition: all .4s ease .1s;
-        }
-       
-        .hambargar.active .line:nth-of-type(1){
-            transform: rotate(45deg) translateY(12px);
-        }
-        .hambargar.active .line:nth-of-type(2){
-            width: 0;
-            transition: all .1s ease;
-        }
-        .hambargar.active .line:nth-of-type(3){
-            transform: rotate(-45deg) translateY(-12px);
-        }
+    @media only screen and (max-width : 1000px){
+      html{
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
     
-        .hero nav {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            gap: 10px;
-        }
-        .hero nav ul{
-            width: 100%;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #DBD3CD;
-            position: relative;
-            max-height:0;
-            overflow: hidden;
-            display: flex;
-            transition: all .4s ease;
-            opacity:0;
-            z-index: 2;
-        }
-        .hero nav ul li {
-            margin:3px 0;
-            text-align: center;
-            width: 110px;
-        }
-        .hero nav ul li a{
-            border-radius: 20px;
-            width: 100%;
-        }
-        .hero nav ul i.fa-user:first-of-type{
-            margin-left:0;    
-        }
-        .hh {
-            display: flex;
-            justify-content: space-between;
-        }
-        .sub-menu-wrap {
-            left: 50%;
-            transform: translateX(-50%)
-        }
-    }
+    .hambargar {
+          display: block;
+          margin-top: 10px;
+      }
+      .hambargar .line {
+          width: 30px;
+          height:3px;
+          background-color:black;
+          margin: 6px 0;
+          transition: all .4s ease .1s;
+      }
+     
+      .hambargar.active .line:nth-of-type(1){
+          transform: rotate(45deg) translateY(12px);
+      }
+      .hambargar.active .line:nth-of-type(2){
+          width: 0;
+          transition: all .1s ease;
+      }
+      .hambargar.active .line:nth-of-type(3){
+          transform: rotate(-45deg) translateY(-12px);
+      }
+  
+      .hero nav {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+      }
+      .hero nav ul{
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: white;
+          position: relative;
+          max-height:0;
+          overflow: hidden;
+          display: flex;
+          transition: all .4s ease;
+          opacity:0;
+          z-index: 2;
+      }
+      .hero nav ul li {
+          margin:3px 0;
+          text-align: center;
+          width: 110px;
+      }
+      .hero nav ul li a{
+          border-radius: 20px;
+          width: 100%;
+      }
+      .hero nav ul i.fa-user:first-of-type{
+          margin-left:0;    
+      }
+      .hh {
+          display: flex;
+          justify-content: space-between;
+      }
+      .sub-menu-wrap {
+          left: 50%;
+          transform: translateX(-50%)
+      }
+  }
     @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap");
     
     :root {

@@ -6,11 +6,14 @@ var logger = require('morgan');
 const expressSession=require('express-session');
 const passport=require('passport');
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/database');
+var usersRouter = require('./models/userdata-model');
 const bodyParser = require('body-parser');
-
+require("dotenv").config()
 var app = express();
 
+// const path =require('path');
+
+const db = require("./configs/mongoose-connection")
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -38,7 +41,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
