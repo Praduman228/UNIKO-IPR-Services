@@ -110,7 +110,7 @@
         background:#a1a1a1;
         padding:1px;
     }
-    .hero nav .sub-menu-wrap .show {
+    .hero nav .sub-menu-wrap~.show {
         max-height: 800px;
         opacity:1;
     }
