@@ -349,152 +349,37 @@
       </div>
   </div>
 </section>
-
-
-
 </div>
 
+<div id="contactus">
+  <div id="con1">
+   <h2>Lets Connect</h2>
+  <form action="" class="contactform">
+    <input type="text" name="name" placeholder="Your Name">
+    <input type="email" name="email" placeholder="Your Email">
+    <input type="text" name="country" placeholder="Country">
+    <input type="tel" name="phone" placeholder="Phone no">
+    <input type="text" name="Company" placeholder="Company Name">
+    <input type="tel" name="Mobile" placeholder="Mobile number">
+    <input type="text" name="city" placeholder="city">
+    <input type="text" name="state" placeholder="State">
+    <input type="number" name="postalcode" placeholder="Postal Code">
+    <input type="text" name="subject" placeholder="Subject">
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
 
-<div id="contact">
-  <section class="contact-sec sec-pad">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="contact-detail">
-            <h1 class="section-title">Contact us</h1>
-            <h4 class="title">If you aspire to safeguard your unique invention, research in accordance with proper rules and regulation, then it’s time to communicate with us</h4>
-            <ul class="contact-ul">
-              <li><i class="fa fa-location-dot"></i>Near GB Club, Khat road, Bhandara(441904),MH</li>
-  
-              <li>
-                <i class="fa fa-phone"></i>
-                <a href="tel:9284049327"><b>9284049327</b></a>
-              </li>
-  
-              <li>
-                <i class="fa-solid fa-envelope"></i>
-                <a href="#"><b>unikoip@outlook.com</b></a>
-              </li>
-            </ul>
-  
-            <span>
-              <a href="#" class="fb"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#" class="insta"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
-            </span>
-          </div>
-        </div>
-  
-        <div class="col-md-6">
-        <!-- // form -->
-        <% if(req.isAuthenticated()){ %>
-          <form action="/contact" class="contFrm" method="POST">
-            <div class="row">
-              <div class="col-sm-6">
-                <input type="text" name="uname" placeholder="Your Name" class="inptFld" required />
-              </div>
-  
-              <div class="col-sm-6">
-                <input type="email" name="uemail" placeholder="Email Address" value="<%=user.name %>" class="inptFld" required />
-              </div>
-  
-              <div class="col-sm-6">
-                <input type="tel" name="uphone" placeholder="Phone Number" class="inptFld" value="<%=user.email%>" required />
-              </div>
-
-              <div class="col-sm-6">
-                <input type="text" name="comname" placeholder="Company Name" class="inptFld" required />
-              </div>
-              
-              <div class="col-sm-6">
-                <input type="text" name="Country" placeholder="Country" class="inptFld" required />
-              </div>
-
-              <div class="col-sm-6">
-                <input type="text" name="State" placeholder="State" class="inptFld" required />
-              </div>
-
-              <div class="col-sm-6">
-                <input type="text" name="usub" placeholder="Subject" class="inptFld" required />
-              </div>
-  
-              <div class="col-12">
-                <textarea class="inptFld" rows="" cols="" placeholder="Your Message..." required name="utext"></textarea>
-              </div>
-  
-              <div class="col-12">
-                <input type="submit" name="submit" value="SUBMIT" class="inptBtn" />
-              </div>
-  
-              <div class="col-sm-6">
-                <input type="text" name="usub" placeholder="Subject" class="inptFld" required />
-              </div>
-  
-              <div class="col-12">
-                <textarea class="inptFld" rows="" cols="" placeholder="Your Message..." required name="utext"></textarea>
-              </div>
-  
-              <div class="col-12">
-                <input type="submit" name="submit" value="SUBMIT" class="inptBtn" />
-              </div>
-            </div>
-          </form>
-          <% }else{ %>
-            <form action="/contact" class="contFrm" method="POST">
-              <div class="row">
-                <div class="col-sm-6">
-                  <input type="text" name="uname" placeholder="Your Name" class="inptFld" required />
-                </div>
-    
-                <div class="col-sm-6">
-                  <input type="email" name="uemail" placeholder="Email Address" class="inptFld" required />
-                </div>
-    
-                <div class="col-sm-6">
-                  <input type="tel" name="uphone" placeholder="Phone Number" class="inptFld" required />
-                </div>
-
-                <div class="col-sm-6">
-                  <input type="text" name="comname" placeholder="Company Name" class="inptFld" required />
-                </div>
-                
-                <div class="col-sm-6">
-                  <input type="text" name="Country" placeholder="Country" class="inptFld" required />
-                </div>
-
-                <div class="col-sm-6">
-                  <input type="text" name="State" placeholder="State" class="inptFld" required />
-                </div>
-
-                <div class="col-sm-6">
-                  <input type="text" name="usub" placeholder="Subject" class="inptFld" required />
-                </div>
-    
-                <div class="col-12">
-                  <textarea class="inptFld" rows="" cols="" placeholder="Your Message..." required name="utext"></textarea>
-                </div>
-    
-                <div class="col-12">
-                  <input type="submit" name="submit" value="SUBMIT" class="inptBtn" />
-                </div>
-              </div>
-            </form>
-            <% }%>
-        </div>
-      </div>
-  
-      <div style="text-align: center; margin-top: 20px;">
-        <p> Copyright &copy;
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
-          All rights reserved | Prad
-        </p>
-      </div>
-  
-    </div>
-  </section>
+  </form>
+ </div>
+ <div id="con2">
+  <h1>Contact Us</h1>
+  <h4>If you aspire to safeguard your unique invention, research in accordance with proper rules and regulation, then it’s time to communicate with us</h4>
+  <h5>Contact Details:-</h5>
+  <div class="loc"><i class="ri-map-pin-line"></i><h4>Near Shiv Mandir, Shanti Nagar,<br> Khat Road, Bhandara (441904)<br> Maharashtra</h4></div>
+  <div class="loc1"><i class="ri-smartphone-line"></i><h6 class="phone">+91 9876543210</h6></div>
+  <div class="loc1"><i class="ri-mail-line"></i><h6 class="phone">unikoip@outlook.com</h6></div>
+  <div class="loc1"><i class="ri-global-line"></i><h6 class="phone">www.unikoip.com</h6></div>
+ </div>
 </div>
+
 
 
   </div>
