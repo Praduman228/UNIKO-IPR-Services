@@ -15,17 +15,23 @@ router.get('/login', function(req, res) {
 
 router.post('/contact', async function(req, res) {
   const newcontact = await contactmodel.create({
-    name:req.body.uname,
-    email:req.body.uemail,
-    phone:req.body.uphone,
-    subject:req.body.usub,
-    message:req.body.utext
+    name:req.body.name,
+    email:req.body.email,
+    conutry:req.body.conutry,
+    phone:req.body.phone,
+    company:req.body.Company,
+    mobile:req.body.Mobile,
+    city:req.body.city,
+    state:req.body.state,
+    postalCode:req.body.postalcode,
+    subject:req.body.subject,
+    message:req.body.message 
   })
   await newcontact.save()
   
   
-  var name = req.body.uname;
-  var email = req.body.uemail;
+  var name = req.body.name;
+  var email = req.body.email;
   
   
   const transporter = nodemail.createTransport({
